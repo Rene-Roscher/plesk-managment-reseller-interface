@@ -1,0 +1,3331 @@
+Requested at: Freitag, 07. September 2018 19:07:14
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.11585
+            [namelookup_time] => 0.004297
+            [connect_time] => 0.016935
+            [pretransfer_time] => 0.048487
+            [size_upload] => 0
+            [size_download] => 1039
+            [speed_download] => 8968
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.11577
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 53237
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+    [created] => 1536347188577
+    [updated] => 1536347232683
+    [amount] => 10
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => http://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+            [failure_url] => http://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR&amount=10.00&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 87.161.171.215
+        )
+
+    [notification_url] => http://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1845856241
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.99
+                )
+
+            [1] => Array
+                (
+                    [serial] => 1858286742
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 9.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Freitag, 07. September 2018 19:07:14
+
+Request: Array
+(
+    [id] => pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.162789
+            [namelookup_time] => 2.0E-5
+            [connect_time] => 0.01285
+            [pretransfer_time] => 0.044196
+            [size_upload] => 60
+            [size_download] => 850
+            [speed_download] => 5221
+            [speed_upload] => 368
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.16275
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 53238
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+    [created] => 1536347188577
+    [updated] => 1536347232683
+    [amount] => 10
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => http://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+            [failure_url] => http://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 87.161.171.215
+        )
+
+    [notification_url] => http://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_9X4fpmxEzQX35CYm8XvjNNYOll9oOSGh_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1845856241
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.99
+                )
+
+            [1] => Array
+                (
+                    [serial] => 1858286742
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 9.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Samstag, 08. September 2018 16:25:17
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.110936
+            [namelookup_time] => 3.3E-5
+            [connect_time] => 0.012582
+            [pretransfer_time] => 0.043003
+            [size_upload] => 0
+            [size_download] => 950
+            [speed_download] => 8563
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.11088
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 39601
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+    [created] => 1536423883972
+    [updated] => 1536423915060
+    [amount] => 5.61
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => http://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+            [failure_url] => http://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR&amount=5.61&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 31.19.117.71
+        )
+
+    [notification_url] => http://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1858643539
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 5.61
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Samstag, 08. September 2018 16:25:17
+
+Request: Array
+(
+    [id] => pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.190168
+            [namelookup_time] => 2.5E-5
+            [connect_time] => 0.01283
+            [pretransfer_time] => 0.044371
+            [size_upload] => 60
+            [size_download] => 762
+            [speed_download] => 4006
+            [speed_upload] => 315
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.190105
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 39605
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+    [created] => 1536423883972
+    [updated] => 1536423915060
+    [amount] => 5.61
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => http://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+            [failure_url] => http://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 31.19.117.71
+        )
+
+    [notification_url] => http://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_8gG5nPjp1dYbIbm3fE98XL1Vpj94Zql4_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1858643539
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 5.61
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Sonntag, 09. September 2018 14:03:43
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.117875
+            [namelookup_time] => 3.4E-5
+            [connect_time] => 0.01302
+            [pretransfer_time] => 0.044774
+            [size_upload] => 0
+            [size_download] => 1039
+            [speed_download] => 8814
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.117806
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 49629
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+    [created] => 1536501787338
+    [updated] => 1536501821558
+    [amount] => 30
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => http://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+            [failure_url] => http://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR&amount=30.00&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 79.204.35.72
+        )
+
+    [notification_url] => http://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1858927976
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+            [1] => Array
+                (
+                    [serial] => 1858928089
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 20
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Sonntag, 09. September 2018 14:03:43
+
+Request: Array
+(
+    [id] => pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.148395
+            [namelookup_time] => 2.4E-5
+            [connect_time] => 0.012457
+            [pretransfer_time] => 0.042985
+            [size_upload] => 60
+            [size_download] => 850
+            [speed_download] => 5727
+            [speed_upload] => 404
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.148332
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 49632
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+    [created] => 1536501787338
+    [updated] => 1536501821558
+    [amount] => 30
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => http://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+            [failure_url] => http://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 79.204.35.72
+        )
+
+    [notification_url] => http://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_iTxrsOq8ld8gZyeHgyA5EQOd8iqeIP2E_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1858927976
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+            [1] => Array
+                (
+                    [serial] => 1858928089
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 20
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:13:47
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.112165
+            [namelookup_time] => 2.7E-5
+            [connect_time] => 0.012599
+            [pretransfer_time] => 0.043046
+            [size_upload] => 0
+            [size_download] => 955
+            [speed_download] => 8514
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.112126
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 55845
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+    [created] => 1536592421974
+    [updated] => 1536592425777
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:13:47
+
+Request: Array
+(
+    [id] => pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.142432
+            [namelookup_time] => 1.5E-5
+            [connect_time] => 0.012496
+            [pretransfer_time] => 0.043495
+            [size_upload] => 60
+            [size_download] => 767
+            [speed_download] => 5385
+            [speed_upload] => 421
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.14236
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 55851
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+    [created] => 1536592421974
+    [updated] => 1536592425777
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_ZcUdTFKqOwQW2fce9TieVaUyL1SRmeAr_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:22:58
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.110095
+            [namelookup_time] => 3.8E-5
+            [connect_time] => 0.012951
+            [pretransfer_time] => 0.044435
+            [size_upload] => 0
+            [size_download] => 955
+            [speed_download] => 8674
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.110009
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 34771
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+    [created] => 1536592948568
+    [updated] => 1536592976688
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:22:58
+
+Request: Array
+(
+    [id] => pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.143405
+            [namelookup_time] => 2.6E-5
+            [connect_time] => 0.012858
+            [pretransfer_time] => 0.044151
+            [size_upload] => 60
+            [size_download] => 767
+            [speed_download] => 5348
+            [speed_upload] => 418
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.143337
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 34774
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+    [created] => 1536592948568
+    [updated] => 1536592976688
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_bzRCR6v6boKzWXGdeMDHphPdxj9sbW8p_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:25:24
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.114632
+            [namelookup_time] => 3.7E-5
+            [connect_time] => 0.012681
+            [pretransfer_time] => 0.043999
+            [size_upload] => 0
+            [size_download] => 955
+            [speed_download] => 8331
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.114574
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 36723
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+    [created] => 1536593111389
+    [updated] => 1536593122457
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:25:24
+
+Request: Array
+(
+    [id] => pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.137747
+            [namelookup_time] => 2.3E-5
+            [connect_time] => 0.01287
+            [pretransfer_time] => 0.044314
+            [size_upload] => 60
+            [size_download] => 767
+            [speed_download] => 5568
+            [speed_upload] => 435
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.137685
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 36724
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+    [created] => 1536593111389
+    [updated] => 1536593122457
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_5AAGXwRoeLmp6i9YH0PFNUbzwiwQ29pq_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:26:25
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.117682
+            [namelookup_time] => 3.7E-5
+            [connect_time] => 0.013011
+            [pretransfer_time] => 0.04447
+            [size_upload] => 0
+            [size_download] => 955
+            [speed_download] => 8115
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.117613
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 37534
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+    [created] => 1536593178422
+    [updated] => 1536593183105
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:26:25
+
+Request: Array
+(
+    [id] => pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.14731
+            [namelookup_time] => 2.7E-5
+            [connect_time] => 0.012582
+            [pretransfer_time] => 0.04295
+            [size_upload] => 60
+            [size_download] => 767
+            [speed_download] => 5206
+            [speed_upload] => 407
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.147252
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 37535
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+    [created] => 1536593178422
+    [updated] => 1536593183105
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_QMnzXEmEOLVTgDQ3FisV9qbcMhwBUIVx_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:27:02
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.110264
+            [namelookup_time] => 3.1E-5
+            [connect_time] => 0.012704
+            [pretransfer_time] => 0.043661
+            [size_upload] => 0
+            [size_download] => 955
+            [speed_download] => 8661
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.110207
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 38033
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+    [created] => 1536593216172
+    [updated] => 1536593220493
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:27:02
+
+Request: Array
+(
+    [id] => pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.130459
+            [namelookup_time] => 5.7E-5
+            [connect_time] => 0.012601
+            [pretransfer_time] => 0.044031
+            [size_upload] => 60
+            [size_download] => 767
+            [speed_download] => 5879
+            [speed_upload] => 459
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.130389
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 38034
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+    [created] => 1536593216172
+    [updated] => 1536593220493
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_2gOGE6YsLEXljrTe6WJG3fnKZUTj4Am5_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:32:36
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.10164
+            [namelookup_time] => 3.5E-5
+            [connect_time] => 0.013079
+            [pretransfer_time] => 0.044784
+            [size_upload] => 0
+            [size_download] => 955
+            [speed_download] => 9395
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.101584
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 42333
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+    [created] => 1536593534949
+    [updated] => 1536593554374
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 15:32:36
+
+Request: Array
+(
+    [id] => pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.140229
+            [namelookup_time] => 2.3E-5
+            [connect_time] => 0.01288
+            [pretransfer_time] => 0.044266
+            [size_upload] => 60
+            [size_download] => 767
+            [speed_download] => 5469
+            [speed_upload] => 427
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.14016
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 42334
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+    [created] => 1536593534949
+    [updated] => 1536593554374
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.119.72
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_alrpjOb3tuzbYJUTKlou1JzdkkwG7oHg_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 18:25:24
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.119757
+            [namelookup_time] => 2.8E-5
+            [connect_time] => 0.012813
+            [pretransfer_time] => 0.043677
+            [size_upload] => 0
+            [size_download] => 952
+            [speed_download] => 7949
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.119685
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 36981
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+    [created] => 1536603914694
+    [updated] => 1536603922817
+    [amount] => 0.18
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR&amount=0.18&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 84.59.96.14
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1829730558
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.18
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 18:25:24
+
+Request: Array
+(
+    [id] => pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.174695
+            [namelookup_time] => 2.2E-5
+            [connect_time] => 0.012477
+            [pretransfer_time] => 0.042995
+            [size_upload] => 60
+            [size_download] => 764
+            [speed_download] => 4373
+            [speed_upload] => 343
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.174614
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 36982
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+    [created] => 1536603914694
+    [updated] => 1536603922817
+    [amount] => 0.18
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 84.59.96.14
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1829730558
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.18
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 18:25:25
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.181221
+            [namelookup_time] => 2.9E-5
+            [connect_time] => 0.012941
+            [pretransfer_time] => 0.044567
+            [size_upload] => 0
+            [size_download] => 949
+            [speed_download] => 5236
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.181148
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 36991
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+    [created] => 1536603914694
+    [updated] => 1536603924644
+    [amount] => 0.18
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR&amount=0.18&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 84.59.96.14
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_Lu9Q7L8oL5wHMfDhhVqrtjFDala1S7Vt_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1829730558
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.18
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 18:37:02
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.118658
+            [namelookup_time] => 2.5E-5
+            [connect_time] => 0.013026
+            [pretransfer_time] => 0.04475
+            [size_upload] => 0
+            [size_download] => 952
+            [speed_download] => 8023
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.118594
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 42141
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+    [created] => 1536604591017
+    [updated] => 1536604620297
+    [amount] => 0.05
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR&amount=0.05&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 84.59.96.14
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1829730558
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.05
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 10. September 2018 18:37:02
+
+Request: Array
+(
+    [id] => pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.154057
+            [namelookup_time] => 3.4E-5
+            [connect_time] => 0.012636
+            [pretransfer_time] => 0.043191
+            [size_upload] => 60
+            [size_download] => 764
+            [speed_download] => 4959
+            [speed_upload] => 389
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.154003
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 42145
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+    [created] => 1536604591017
+    [updated] => 1536604620297
+    [amount] => 0.05
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 84.59.96.14
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_9t4A6elPV0pKftkZZhoqAgeOx7t9esEf_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1829730558
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.05
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Dienstag, 11. September 2018 17:41:23
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.110862
+            [namelookup_time] => 2.6E-5
+            [connect_time] => 0.012825
+            [pretransfer_time] => 0.044563
+            [size_upload] => 0
+            [size_download] => 953
+            [speed_download] => 8596
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.110804
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 50663
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+    [created] => 1536687655305
+    [updated] => 1536687681201
+    [amount] => 0.95
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR&amount=0.95&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 95.222.31.59
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1858988819
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.95
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Dienstag, 11. September 2018 17:41:23
+
+Request: Array
+(
+    [id] => pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.14633
+            [namelookup_time] => 2.3E-5
+            [connect_time] => 0.012929
+            [pretransfer_time] => 0.043981
+            [size_upload] => 60
+            [size_download] => 765
+            [speed_download] => 5227
+            [speed_upload] => 410
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.146273
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 50667
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+    [created] => 1536687655305
+    [updated] => 1536687681201
+    [amount] => 0.95
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 95.222.31.59
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_B4OxPvAPTZ6H5rogT60HflOAMwKxrepP_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1858988819
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.95
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Mittwoch, 12. September 2018 13:50:50
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.109129
+            [namelookup_time] => 2.7E-5
+            [connect_time] => 0.012558
+            [pretransfer_time] => 0.043234
+            [size_upload] => 0
+            [size_download] => 954
+            [speed_download] => 8741
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.109061
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 43601
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+    [created] => 1536760224747
+    [updated] => 1536760248467
+    [amount] => 12.87
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR&amount=12.87&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 85.5.9.251
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1859865801
+                    [type] => 00061
+                    [country] => CH
+                    [currency] => CHF
+                    [amount] => 14.81
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Mittwoch, 12. September 2018 13:50:50
+
+Request: Array
+(
+    [id] => pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.133089
+            [namelookup_time] => 2.6E-5
+            [connect_time] => 0.01268
+            [pretransfer_time] => 0.043346
+            [size_upload] => 60
+            [size_download] => 765
+            [speed_download] => 5748
+            [speed_upload] => 450
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.133002
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 43602
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+    [created] => 1536760224747
+    [updated] => 1536760248467
+    [amount] => 12.87
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 85.5.9.251
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_e22vRcYSZAhLyghnYmPAIObnGmtGZU1n_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1859865801
+                    [type] => 00061
+                    [country] => CH
+                    [currency] => CHF
+                    [amount] => 14.81
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Mittwoch, 12. September 2018 17:10:24
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.115851
+            [namelookup_time] => 2.8E-5
+            [connect_time] => 0.012711
+            [pretransfer_time] => 0.043371
+            [size_upload] => 0
+            [size_download] => 959
+            [speed_download] => 8277
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.115792
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 42019
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+    [created] => 1536772196178
+    [updated] => 1536772221408
+    [amount] => 10
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR&amount=10.00&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.113.180
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1859812156
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Mittwoch, 12. September 2018 17:10:24
+
+Request: Array
+(
+    [id] => pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.169834
+            [namelookup_time] => 2.2E-5
+            [connect_time] => 0.012769
+            [pretransfer_time] => 0.043474
+            [size_upload] => 60
+            [size_download] => 770
+            [speed_download] => 4533
+            [speed_upload] => 353
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.16978
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 42020
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+    [created] => 1536772196178
+    [updated] => 1536772221408
+    [amount] => 10
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 217.228.113.180
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_k5aAig7VRICZfNbEn5VITEY1KnzTOwRp_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1859812156
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Donnerstag, 13. September 2018 16:14:24
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.174462
+            [namelookup_time] => 0.004287
+            [connect_time] => 0.030848
+            [pretransfer_time] => 0.090363
+            [size_upload] => 0
+            [size_download] => 1044
+            [speed_download] => 5984
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.174382
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 53888
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+    [created] => 1536855201955
+    [updated] => 1536855262752
+    [amount] => 20
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR&amount=20.00&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 87.161.190.241
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1859546912
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+            [1] => Array
+                (
+                    [serial] => 1859547295
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Donnerstag, 13. September 2018 16:14:25
+
+Request: Array
+(
+    [id] => pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.245398
+            [namelookup_time] => 2.2E-5
+            [connect_time] => 0.030336
+            [pretransfer_time] => 0.096905
+            [size_upload] => 60
+            [size_download] => 855
+            [speed_download] => 3484
+            [speed_upload] => 244
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.245331
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 53894
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+    [created] => 1536855201955
+    [updated] => 1536855262752
+    [amount] => 20
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 87.161.190.241
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1859546912
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+            [1] => Array
+                (
+                    [serial] => 1859547295
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Donnerstag, 13. September 2018 16:14:26
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.181909
+            [namelookup_time] => 2.6E-5
+            [connect_time] => 0.030438
+            [pretransfer_time] => 0.096779
+            [size_upload] => 0
+            [size_download] => 1041
+            [speed_download] => 5722
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.181856
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 46.251.239.131
+            [local_port] => 53921
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+    [created] => 1536855201955
+    [updated] => 1536855264965
+    [amount] => 20
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://start.infectedev.eu/api/payment/paysafecard/success?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+            [failure_url] => https://start.infectedev.eu/api/payment/paysafecard/error?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020010181&mtid=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR&amount=20.00&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 5
+            [ip] => 87.161.190.241
+        )
+
+    [notification_url] => https://start.infectedev.eu/api/payment/paysafecard/notify?payment=pay_1020010181_nT07jaRfM3hFFilkwuslMs33wysVYCdF_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1859546912
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+            [1] => Array
+                (
+                    [serial] => 1859547295
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 10
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 17. September 2018 19:57:09
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.120496
+            [namelookup_time] => 0.004221
+            [connect_time] => 0.017605
+            [pretransfer_time] => 0.058247
+            [size_upload] => 0
+            [size_download] => 940
+            [speed_download] => 7801
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.12042
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 185.244.164.90
+            [local_port] => 41680
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+    [created] => 1537213776353
+    [updated] => 1537213810860
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://controlserv.eu/api/payment/paysafecard/success?payment=pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+            [failure_url] => https://controlserv.eu/api/payment/paysafecard/error?payment=pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020005747&mtid=pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 1
+            [ip] => 217.228.122.98
+        )
+
+    [notification_url] => https://controlserv.eu/api/payment/paysafecard/notify?payment=pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 17. September 2018 19:57:10
+
+Request: Array
+(
+    [id] => pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.149815
+            [namelookup_time] => 3.1E-5
+            [connect_time] => 0.01291
+            [pretransfer_time] => 0.051829
+            [size_upload] => 60
+            [size_download] => 752
+            [speed_download] => 5019
+            [speed_upload] => 400
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.149762
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 185.244.164.90
+            [local_port] => 41682
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+    [created] => 1537213776353
+    [updated] => 1537213810860
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://controlserv.eu/api/payment/paysafecard/success?payment=pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+            [failure_url] => https://controlserv.eu/api/payment/paysafecard/error?payment=pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 1
+            [ip] => 217.228.122.98
+        )
+
+    [notification_url] => https://controlserv.eu/api/payment/paysafecard/notify?payment=pay_1020005747_I0v9Wk3bqDinBLK1qek1WVZkHtRWTQ27_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 17. September 2018 19:59:59
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.118602
+            [namelookup_time] => 4.1E-5
+            [connect_time] => 0.012842
+            [pretransfer_time] => 0.051498
+            [size_upload] => 0
+            [size_download] => 940
+            [speed_download] => 7925
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.118541
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 185.244.164.90
+            [local_port] => 42408
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+    [created] => 1537214367692
+    [updated] => 1537214397763
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://controlserv.eu/api/payment/paysafecard/success?payment=pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+            [failure_url] => https://controlserv.eu/api/payment/paysafecard/error?payment=pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020005747&mtid=pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 1
+            [ip] => 217.228.122.98
+        )
+
+    [notification_url] => https://controlserv.eu/api/payment/paysafecard/notify?payment=pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 17. September 2018 19:59:59
+
+Request: Array
+(
+    [id] => pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.152814
+            [namelookup_time] => 3.1E-5
+            [connect_time] => 0.013147
+            [pretransfer_time] => 0.051772
+            [size_upload] => 60
+            [size_download] => 752
+            [speed_download] => 4921
+            [speed_upload] => 392
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.152746
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 185.244.164.90
+            [local_port] => 42410
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+    [created] => 1537214367692
+    [updated] => 1537214397763
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://controlserv.eu/api/payment/paysafecard/success?payment=pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+            [failure_url] => https://controlserv.eu/api/payment/paysafecard/error?payment=pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 1
+            [ip] => 217.228.122.98
+        )
+
+    [notification_url] => https://controlserv.eu/api/payment/paysafecard/notify?payment=pay_1020005747_ZPdslnR5Zkao1jt3aScnVYCo8p9MfLTM_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 17. September 2018 20:00:46
+
+Request: Array
+(
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 224
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.127618
+            [namelookup_time] => 0.004283
+            [connect_time] => 0.017085
+            [pretransfer_time] => 0.057058
+            [size_upload] => 0
+            [size_download] => 940
+            [speed_download] => 7365
+            [speed_upload] => 0
+            [download_content_length] => -1
+            [upload_content_length] => -1
+            [starttransfer_time] => 0.127532
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 185.244.164.90
+            [local_port] => 42708
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+    [created] => 1537214424654
+    [updated] => 1537214444537
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => AUTHORIZED
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://controlserv.eu/api/payment/paysafecard/success?payment=pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+            [failure_url] => https://controlserv.eu/api/payment/paysafecard/error?payment=pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+            [auth_url] => https://customer.cc.at.paysafecard.com/psccustomer/GetCustomerPanelServlet?mid=1020005747&mtid=pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR&amount=0.01&currency=EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 1
+            [ip] => 217.228.122.98
+        )
+
+    [notification_url] => https://controlserv.eu/api/payment/paysafecard/notify?payment=pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
+Requested at: Montag, 17. September 2018 20:00:46
+
+Request: Array
+(
+    [id] => pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+    [request_url] => https://api.paysafecard.com/v1/payments/pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR/capture
+)
+
+HTTP: Array
+(
+    [info] => Array
+        (
+            [url] => https://api.paysafecard.com/v1/payments/pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR/capture
+            [content_type] => application/json
+            [http_code] => 200
+            [header_size] => 500
+            [request_size] => 313
+            [filetime] => -1
+            [ssl_verify_result] => 0
+            [redirect_count] => 0
+            [total_time] => 0.163548
+            [namelookup_time] => 2.5E-5
+            [connect_time] => 0.012851
+            [pretransfer_time] => 0.055977
+            [size_upload] => 60
+            [size_download] => 752
+            [speed_download] => 4598
+            [speed_upload] => 366
+            [download_content_length] => -1
+            [upload_content_length] => 60
+            [starttransfer_time] => 0.163498
+            [redirect_time] => 0
+            [redirect_url] => 
+            [primary_ip] => 194.1.158.56
+            [certinfo] => Array
+                (
+                )
+
+            [primary_port] => 443
+            [local_ip] => 185.244.164.90
+            [local_port] => 42714
+        )
+
+    [error_nr] => 0
+    [error_text] => 
+    [http_status] => 200
+)
+
+Response: Array
+(
+    [object] => PAYMENT
+    [id] => pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+    [created] => 1537214424654
+    [updated] => 1537214444537
+    [amount] => 0.01
+    [currency] => EUR
+    [status] => SUCCESS
+    [type] => PAYSAFECARD
+    [redirect] => Array
+        (
+            [success_url] => https://controlserv.eu/api/payment/paysafecard/success?payment=pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+            [failure_url] => https://controlserv.eu/api/payment/paysafecard/error?payment=pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+        )
+
+    [customer] => Array
+        (
+            [id] => 1
+            [ip] => 217.228.122.98
+        )
+
+    [notification_url] => https://controlserv.eu/api/payment/paysafecard/notify?payment=pay_1020005747_06J74gZNdVZ7SuTlGfqPP8msudJHiCRo_EUR
+    [card_details] => Array
+        (
+            [0] => Array
+                (
+                    [serial] => 1851723267
+                    [type] => 00028
+                    [country] => DE
+                    [currency] => EUR
+                    [amount] => 0.01
+                )
+
+        )
+
+)
+--------------------------------------------
